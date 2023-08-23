@@ -10,4 +10,7 @@ console.log(tomorrow);
 let timeTomorrow =parseInt(tomorrow.getTime());
 console.log(timeTomorrow);
 
+//tempo rimanente (in secondi)
+let timeRemaining = ((timeTomorrow - timeNow) / 1000)
+console.log(timeRemaining);
 
