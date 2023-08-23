@@ -11,6 +11,14 @@ let timeTomorrow =parseInt(tomorrow.getTime());
 console.log(timeTomorrow);
 
 //tempo rimanente (in secondi)
-let timeRemaining = ((timeTomorrow - timeNow) / 1000)
-console.log(timeRemaining);
-
+let secTimeRemaining = Math.floor((timeTomorrow - timeNow) / 1000)
+//tempo rimanente (in minuti)
+let minTimeRemaining = Math.floor(secTimeRemaining / 60)
+//tempo rimanente (in ore)
+let hourTimeRemaining = Math.floor(minTimeRemaining / 60)
+//tempo rimanente (in giorni)
+let dayTimeRemaining = Math.floor(hourTimeRemaining / 24)
+console.log('secondi : ',secTimeRemaining);
+console.log('minuti : ',minTimeRemaining);
+console.log('ore : ',hourTimeRemaining);
+console.log('giorni : ',dayTimeRemaining);
